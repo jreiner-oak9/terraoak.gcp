@@ -28,7 +28,7 @@ resource "google_sql_database_instance" "postgres" {
           value = onprem.value
         }
       }
-      require_ssl = false
+      require_ssl = false # oak9: settings.ip_configuration.require_ssl should be set to any of True
     }
 
     backup_configuration {
