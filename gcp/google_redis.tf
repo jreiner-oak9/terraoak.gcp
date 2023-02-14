@@ -29,5 +29,5 @@ resource "google_redis_instance" "cache" {
     }
   }
 
-  transit_encryption_mode = "DISABLED"
+  transit_encryption_mode = "SERVER_AUTHENTICATION"
 }
