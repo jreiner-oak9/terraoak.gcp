@@ -6,7 +6,7 @@ resource "google_redis_instance" "cache" {
   location_id             = "us-central1-a"
   alternative_location_id = "us-central1-f"
 
-  auth_enabled = false
+  auth_enabled = true
 
   redis_version     = "REDIS_4_0"
   display_name      = "Terraform Test Instance"
