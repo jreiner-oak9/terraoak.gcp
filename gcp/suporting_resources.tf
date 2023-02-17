@@ -12,6 +12,7 @@ resource "google_compute_firewall" "firewall" {
   }
 
   source_ranges = ["*"]
+  # oak9: Firewall rule is set to allow traffic from all sources
 }
 
 resource "google_compute_network" "network" {
