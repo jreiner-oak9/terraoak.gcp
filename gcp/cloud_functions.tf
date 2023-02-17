@@ -1,6 +1,7 @@
 
 resource "google_cloudfunctions_function" "function" {
   name        = "function-test"
+  # oak9: google_cloudfunctions_function.kms_key_name is not set to use customer managed keys for encryption
   description = "My function"
   runtime     = "nodejs14"
 
