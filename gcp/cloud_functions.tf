@@ -2,6 +2,7 @@
 resource "google_cloudfunctions_function" "function" {
   name        = "function-test"
   # oak9: google_cloudfunctions_function.kms_key_name is not set to use customer managed keys for encryption
+  # oak9: google_cloudfunctions_function.kms_key_name is not set to use customer managed keys for encryption
   description = "My function"
   runtime     = "nodejs14"
 
@@ -24,5 +25,6 @@ resource "google_cloudfunctions_function_iam_member" "invoker" {
 
   role   = "roles/cloudfunctions.invoker"
   member = "allUsers"
+  # oak9: google_cloudfunctions_function_iam_member.member is not configured
   # oak9: google_cloudfunctions_function_iam_member.member is not configured
 }

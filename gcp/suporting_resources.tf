@@ -13,6 +13,7 @@ resource "google_compute_firewall" "firewall" {
 
   source_ranges = ["*"]
   # oak9: Firewall rule is set to allow traffic from all sources
+  # oak9: Firewall rule is set to allow traffic from all sources
 }
 
 resource "google_compute_network" "network" {
@@ -34,6 +35,7 @@ resource "google_compute_subnetwork_iam_binding" "subnetwork" {
   subnetwork = google_compute_subnetwork.subnetwork.name
   role = "roles/compute.networkUser"
   members = ["allUsers"]
+  # oak9: google_compute_subnetwork_iam_binding.members is not configured
   # oak9: google_compute_subnetwork_iam_binding.members is not configured
 }
 
