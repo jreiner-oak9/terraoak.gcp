@@ -25,4 +25,5 @@ resource "google_cloudfunctions_function_iam_member" "invoker" {
   role   = "roles/cloudfunctions.invoker"
   member = "allUsers"
   # oak9: google_cloudfunctions_function_iam_member.member is not configured
+  # oak9: google_cloudfunctions_function_iam_member.member is not configured
 }
