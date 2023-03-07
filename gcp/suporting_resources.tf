@@ -35,6 +35,7 @@ resource "google_compute_subnetwork_iam_binding" "subnetwork" {
   role = "roles/compute.networkUser"
   members = ["allUsers"]
   # oak9: google_compute_subnetwork_iam_binding.members is not configured
+  # oak9: google_compute_subnetwork_iam_binding.members is not configured
 }
 
 
