@@ -71,7 +71,7 @@ resource "google_app_engine_flexible_app_version" "myapp_v1" {
 
   handlers {
     url_regex        = ".*\\/my-path\\/*"
-    security_level   = "SECURE_DEFAULT"
+    security_level   = "secure_always"
     login            = "LOGIN_REQUIRED"
     auth_fail_action = "AUTH_FAIL_ACTION_REDIRECT"
 
