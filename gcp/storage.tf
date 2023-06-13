@@ -6,6 +6,7 @@ resource "google_storage_bucket" "storage-1" {
   uniform_bucket_level_access = false
   cors {
     origin          = ["*"]
+    # oak9: CORS configuration should only allow requests from trusted origins
     method          = ["*"]
     response_header = ["*"]
     max_age_seconds = 3600
