@@ -9,7 +9,7 @@ resource "google_dns_managed_zone" "private-zone" {
   dnssec_config {
     default_key_specs {
         key_type = "keySigning"
-        algorithm = "rsasha1"
+        algorithm = "rsasha512"
 
     }
   }
