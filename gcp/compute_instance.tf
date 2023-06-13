@@ -1,4 +1,5 @@
 resource "google_compute_instance" "instance" {
+  # oak9: Define authorized users for the IAM policy
   name         = "test"
   machine_type = "e2-medium"
   zone         = "us-central1-a"
